@@ -1,71 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>DecodeX – TeamCodeGame (Round 4)</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f5f7fa;
-      color: #333;
-      margin: 0;
-      padding: 0;
-    }
-    .canvas {
-      max-width: 900px;
-      margin: auto;
-      background: white;
-      padding: 2rem;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-      border-radius: 10px;
-      margin-top: 20px;
-      margin-bottom: 40px;
-    }
-    h1, h2, h3, h4 {
-      color: #2c3e50;
-    }
-    code {
-      background: #eee;
-      padding: 2px 6px;
-      border-radius: 4px;
-      font-size: 0.9rem;
-    }
-    pre {
-      background: #eee;
-      padding: 10px;
-      border-radius: 6px;
-      overflow-x: auto;
-    }
-    ul, ol {
-      margin-left: 20px;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 10px;
-    }
-    table, th, td {
-      border: 1px solid #ccc;
-    }
-    th, td {
-      padding: 8px;
-      text-align: left;
-    }
-    .badge {
-      display: inline-block;
-      background: #27ae60;
-      color: white;
-      padding: 2px 8px;
-      font-size: 0.8rem;
-      border-radius: 4px;
-      margin-left: 4px;
-    }
-  </style>
-</head>
-<body>
-  <div class="canvas">
-    <h1>🕹️ DecodeX – TeamCodeGame (Round 4)</h1>
+
+    # 🕹️ DecodeX – TeamCodeGame (Round 4)</h1>
     
     <h2>📜 Overview</h2>
     <p>
@@ -182,6 +116,5 @@ localStorage.removeItem("teamCodeGameAttempts");
     <p>
       MIT License — free to use with attribution.
     </p>
-  </div>
 </body>
 </html>
