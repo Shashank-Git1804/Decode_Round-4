@@ -1,211 +1,187 @@
-DecodeX – TeamCodeGame (Round 4)
-📜 Overview
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DecodeX – TeamCodeGame (Round 4)</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f7fa;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    .canvas {
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      padding: 2rem;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      margin-top: 20px;
+      margin-bottom: 40px;
+    }
+    h1, h2, h3, h4 {
+      color: #2c3e50;
+    }
+    code {
+      background: #eee;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 0.9rem;
+    }
+    pre {
+      background: #eee;
+      padding: 10px;
+      border-radius: 6px;
+      overflow-x: auto;
+    }
+    ul, ol {
+      margin-left: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+    th, td {
+      padding: 8px;
+      text-align: left;
+    }
+    .badge {
+      display: inline-block;
+      background: #27ae60;
+      color: white;
+      padding: 2px 8px;
+      font-size: 0.8rem;
+      border-radius: 4px;
+      margin-left: 4px;
+    }
+  </style>
+</head>
+<body>
+  <div class="canvas">
+    <h1>🕹️ DecodeX – TeamCodeGame (Round 4)</h1>
+    
+    <h2>📜 Overview</h2>
+    <p>
+      DecodeX is a multi-round competitive coding and puzzle-solving game designed to challenge participants across different skill sets.
+      This repository contains the Round 4 implementation — the <strong>TeamCodeGame</strong> — where teams must enter their final 4-digit code to complete the game.
+    </p>
+    <ul>
+      <li>Prevent teams from tampering with other teams’ code entries</li>
+      <li>Keep a secure and private attempt log</li>
+      <li>Allow only verified teams to enter their codes</li>
+      <li>Limit the number of attempts (maximum 5)</li>
+      <li>Store all attempts locally for persistence</li>
+      <li>Indicate teams that have already completed the challenge</li>
+    </ul>
 
-DecodeX is a multi-round competitive coding and puzzle-solving game designed to challenge participants across different skill sets.
-This repository contains the Round 4 implementation — the TeamCodeGame — where teams must enter their final 4-digit code to complete the game.
+    <h2>🏆 Competition Structure</h2>
+    <ol>
+      <li>
+        <strong>Round 1 — Debugging Python</strong><br/>
+        Players debug broken Python code to get a specific output.
+      </li>
+      <li>
+        <strong>Round 2 — Binary to Digits</strong><br/>
+        Convert binary output from Round 1 to decimal digits.
+      </li>
+      <li>
+        <strong>Round 3 — Logic Puzzle</strong><br/>
+        Solve a puzzle using Round 2 result to get the final clue.
+      </li>
+      <li>
+        <strong>Round 4 — TeamCodeGame</strong><br/>
+        Combine all results into a 4-digit code, verify team ID, and enter it.
+      </li>
+    </ol>
 
-The game is designed to:
+    <h2>🔐 Security Features in Round 4</h2>
+    <ul>
+      <li><strong>Team Verification:</strong> Unique secret ID required before entering code.</li>
+      <li><strong>Private Attempt Logs:</strong> Only your team’s history is visible.</li>
+      <li><strong>Persistence:</strong> Attempts stored in <code>localStorage</code>.</li>
+      <li><strong>Solved Team Lock:</strong> Solved teams marked 🏆 and blocked from submitting.</li>
+      <li><strong>Attempt Limit:</strong> Max 5 tries, after which team is locked out.</li>
+    </ul>
 
-Prevent teams from tampering with other teams’ code entries
+    <h2>🖥️ Tech Stack</h2>
+    <ul>
+      <li>React.js (Frontend)</li>
+      <li>Vite (Build tool)</li>
+      <li>CSS (Custom styles in <code>TeameCodeGameStyle.css</code>)</li>
+      <li>localStorage (Persistence)</li>
+    </ul>
 
-Keep a secure and private attempt log
-
-Allow only verified teams to enter their codes
-
-Limit the number of attempts (maximum 5)
-
-Store all attempts locally for persistence
-
-Indicate teams that have already completed the challenge
-
-🏆 Competition Structure
-
-The competition has 4 rounds:
-
-Round 1 — Debugging Python
-
-Players are given broken Python code.
-
-They must debug it to get a specific output.
-
-Round 2 — Binary to Digits
-
-Using the output from Round 1, players receive a binary code.
-
-They must convert it to decimal digits.
-
-Round 3 — Logic Puzzle
-
-Using the result from Round 2, players must solve a logical puzzle provided to them.
-
-This yields a key element for the final round.
-
-Round 4 — TeamCodeGame (This Repo)
-
-Teams combine all results from previous rounds to get a final 4-digit code.
-
-They have 5 attempts to enter it correctly.
-
-Teams must verify their identity with a secret team ID before entering the code.
-
-Correctly solving the round marks the team as 🏆 completed.
-
-🔐 Security Features in Round 4
-
-Team Verification
-
-Each team has a unique secret ID.
-
-Without entering the correct ID, the team cannot enter the 4-digit code.
-
-Private Attempt Logs
-
-Only verified teams can see their own attempt history.
-
-Teams cannot view other teams’ logs.
-
-Persistence with Local Storage
-
-Every attempt (correct or wrong) is stored in localStorage.
-
-Even after refreshing, attempts remain recorded.
-
-Solved Team Lock
-
-Teams that have already solved the challenge cannot enter another code.
-
-Their dropdown option shows a 🏆 emoji.
-
-Attempt Limit
-
-Each team gets 5 attempts.
-
-Wrong attempts decrement the counter.
-
-At 0 attempts, the team can no longer enter codes.
-
-🖥️ Tech Stack
-
-React.js (Frontend)
-
-Vite (Build tool & dev server)
-
-CSS (Custom styles in TeameCodeGameStyle.css)
-
-localStorage (Persistent attempt tracking)
-
-📂 Project Structure
+    <h2>📂 Project Structure</h2>
+    <pre>
 DecodeX/
-│
 ├── src/
 │   ├── components/
-│   │   └── TeamCodeGame.jsx   # Main game logic
+│   │   └── TeamCodeGame.jsx
 │   ├── style/
-│   │   └── TeameCodeGameStyle.css # Styles for the game
+│   │   └── TeameCodeGameStyle.css
 │   ├── App.jsx
 │   └── main.jsx
-│
-├── public/                    # Public assets (logos, etc.)
-│
+├── public/
 ├── package.json
 └── README.md
+    </pre>
 
-⚙️ Setup & Installation
-1️⃣ Clone the repo
+    <h2>⚙️ Setup & Installation</h2>
+    <pre>
+# 1️⃣ Clone the repo
 git clone https://github.com/your-username/DecodeX.git
 cd DecodeX
 
-2️⃣ Install dependencies
+# 2️⃣ Install dependencies
 npm install
 
-3️⃣ Run in development mode
+# 3️⃣ Run in development
 npm run dev
 
-
-Then open the shown localhost URL in your browser.
-
-4️⃣ Build for production
+# 4️⃣ Build for production
 npm run build
+    </pre>
 
-🎯 How to Play Round 4
+    <h2>🎯 How to Play Round 4</h2>
+    <ol>
+      <li>Select your team from the dropdown.</li>
+      <li>Enter your secret Team ID.</li>
+      <li>Enter the 4-digit code (after verification).</li>
+      <li>Submit and check result.</li>
+    </ol>
+    <p><strong>Win Condition:</strong> Correct code → 🏆 next to your name.</p>
 
-Select Your Team from the dropdown.
-
-Enter Your Secret Team ID to verify.
-
-Example: ALP01 for Team Alpha.
-
-Enter the 4-digit code (only after verification).
-
-Submit — The system will:
-
-Check if your code matches your team’s final code.
-
-Record the attempt with timestamp (HH:MM:SS:ms).
-
-Update your remaining attempts.
-
-Win Condition:
-
-Correct code → 🏆 appears next to your team name.
-
-Restrictions:
-
-Solved teams can be selected for viewing logs but cannot enter codes.
-
-Attempts are stored permanently in localStorage unless manually cleared.
-
-🛠 Clearing Local Storage (Admin Only)
-
-If you need to reset attempts for testing:
-
-Open browser console (F12 → Console).
-
-Run:
-
+    <h2>🛠 Clearing Local Storage (Admin Only)</h2>
+    <pre>
 localStorage.removeItem("teamCodeGameAttempts");
+    </pre>
 
+    <h2>📸 UI Features</h2>
+    <ul>
+      <li>Responsive design</li>
+      <li>Toast notifications</li>
+      <li>Status badges for teams</li>
+      <li>Logs with exact timestamps</li>
+    </ul>
 
-Refresh the page.
+    <h2>📌 Example Scenario</h2>
+    <p>
+      Team Alpha enters ALP01, tries <code>4321</code> → wrong (Attempts left: 4).  
+      On third try, enters <code>1234</code> → correct 🏆.  
+      They can still view logs but cannot submit again.
+    </p>
 
-📸 UI Features
-
-Responsive design for all screen sizes
-
-Toast notifications for feedback (success, error, warning)
-
-Dynamic status badges (Solved 🏆 / Pending)
-
-Private log view showing:
-
-Attempted code
-
-Result (Correct / Wrong)
-
-Exact time (HH:MM:SS.ms)
-
-📌 Example Scenario
-
-Team Alpha selects their name from the dropdown.
-
-They enter ALP01 as secret ID.
-
-They try entering 4321 — wrong → Attempts left: 4.
-
-On the third try, they enter 1234 — correct → 🏆 appears.
-
-They can still view their logs but can’t enter new codes.
-
-🔮 Future Enhancements
-
-Server-based attempt logging (instead of localStorage)
-
-Real-time leaderboard
-
-Admin dashboard for attempt monitoring
-
-Team login authentication
-
-📄 License
-
-This project is licensed under the MIT License — free to use and modify with attribution.
+    <h2>📄 License</h2>
+    <p>
+      MIT License — free to use with attribution.
+    </p>
+  </div>
+</body>
+</html>
