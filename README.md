@@ -1,7 +1,6 @@
-
-    # 🕹️ DecodeX – TeamCodeGame (Round 4)</h1>
+# 🕹️ DecodeX – TeamCodeGame (Round 4)</h1>
     
-    <h2>📜 Overview</h2>
+<h2>📜 Overview</h2>
     <p>
       DecodeX is a multi-round competitive coding and puzzle-solving game designed to challenge participants across different skill sets.
       This repository contains the Round 4 implementation — the <strong>TeamCodeGame</strong> — where teams must enter their final 4-digit code to complete the game.
@@ -15,7 +14,7 @@
       <li>Indicate teams that have already completed the challenge</li>
     </ul>
 
-    <h2>🏆 Competition Structure</h2>
+<h2>🏆 Competition Structure</h2>
     <ol>
       <li>
         <strong>Round 1 — Debugging Python</strong><br/>
@@ -35,7 +34,7 @@
       </li>
     </ol>
 
-    <h2>🔐 Security Features in Round 4</h2>
+<h2>🔐 Security Features in Round 4</h2>
     <ul>
       <li><strong>Team Verification:</strong> Unique secret ID required before entering code.</li>
       <li><strong>Private Attempt Logs:</strong> Only your team’s history is visible.</li>
@@ -44,7 +43,7 @@
       <li><strong>Attempt Limit:</strong> Max 5 tries, after which team is locked out.</li>
     </ul>
 
-    <h2>🖥️ Tech Stack</h2>
+<h2>🖥️ Tech Stack</h2>
     <ul>
       <li>React.js (Frontend)</li>
       <li>Vite (Build tool)</li>
@@ -52,7 +51,7 @@
       <li>localStorage (Persistence)</li>
     </ul>
 
-    <h2>📂 Project Structure</h2>
+<h2>📂 Project Structure</h2>
     <pre>
 DecodeX/
 ├── src/
@@ -67,7 +66,7 @@ DecodeX/
 └── README.md
     </pre>
 
-    <h2>⚙️ Setup & Installation</h2>
+<h2>⚙️ Setup & Installation</h2>
     <pre>
 # 1️⃣ Clone the repo
 git clone https://github.com/your-username/DecodeX.git
@@ -83,7 +82,7 @@ npm run dev
 npm run build
     </pre>
 
-    <h2>🎯 How to Play Round 4</h2>
+<h2>🎯 How to Play Round 4</h2>
     <ol>
       <li>Select your team from the dropdown.</li>
       <li>Enter your secret Team ID.</li>
@@ -92,12 +91,12 @@ npm run build
     </ol>
     <p><strong>Win Condition:</strong> Correct code → 🏆 next to your name.</p>
 
-    <h2>🛠 Clearing Local Storage (Admin Only)</h2>
+<h2>🛠 Clearing Local Storage (Admin Only)</h2>
     <pre>
 localStorage.removeItem("teamCodeGameAttempts");
     </pre>
 
-    <h2>📸 UI Features</h2>
+<h2>📸 UI Features</h2>
     <ul>
       <li>Responsive design</li>
       <li>Toast notifications</li>
@@ -105,14 +104,14 @@ localStorage.removeItem("teamCodeGameAttempts");
       <li>Logs with exact timestamps</li>
     </ul>
 
-    <h2>📌 Example Scenario</h2>
+<h2>📌 Example Scenario</h2>
     <p>
       Team Alpha enters ALP01, tries <code>4321</code> → wrong (Attempts left: 4).  
       On third try, enters <code>1234</code> → correct 🏆.  
       They can still view logs but cannot submit again.
     </p>
 
-    <h2>📄 License</h2>
+<h2>📄 License</h2>
     <p>
       MIT License — free to use with attribution.
     </p>
