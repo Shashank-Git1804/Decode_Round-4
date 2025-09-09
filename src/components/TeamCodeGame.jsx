@@ -4,25 +4,25 @@ import "../style/TeameCodeGameStyle.css";
 const TEAMS = [
 { id: "SM102", name: "Smart Minds", code: "9348" },
 { id: "KP203", name: "King Pin", code: "1235" },
-{ id: "LB305", name: "Team Lady Bug", code: "2146" 
+{ id: "LB305", name: "Team Lady Bug", code: "2146"}, 
 { id: "CG407", name: "CONGRUENT", code: "2144" },
 { id: "EC511", name: "EXIT CODE 2", code: "5228" },
-{ id: "CC113", name: "The Code Crew", code: "9348" 
+{ id: "CC113", name: "The Code Crew", code: "9348"}, 
 { id: "TV217", name: "TrioVolt", code: "1235" },
-{ id: "DC319", name: "Team Decoder", code: "2146" }
+{ id: "DC319", name: "Team Decoder", code: "2146" },
 { id: "RT423", name: "Risky Team", code: "2144" },
-{ id: "TS529", name: "Triple Spark", code: "5228" }
+{ id: "TS529", name: "Triple Spark", code: "5228" },
 { id: "CD131", name: "Code DxD", code: "9348" },
-{ id: "EA233", name: "Escape Artists", code: "1235"
-{ id: "BV339", name: "Bold Visions", code: "2146" }
+{ id: "EA233", name: "Escape Artists", code: "1235"},
+{ id: "BV339", name: "Bold Visions", code: "2146" },
 { id: "SS439", name: "Starship", code: "2144" },
-{ id: "BW541", name: "Bluewave Coders", code: "5228
+{ id: "BW541", name: "Bluewave Coders", code: "5228},
 { id: "ST143", name: "Samurai", code: "9348" },
-{ id: "DB247", name: "Debugging Squad", code: "1235
+{ id: "DB247", name: "Debugging Squad", code: "1235},
 { id: "DT351", name: "Decode Trio", code: "2146" },
-{ id: "AE453", name: "AMC Engineering", code: "2144
-{ id: "VX557", name: "Team VisionX", code: "5228" }
-{ id: "GT159", name: "Golden Trash", code: "9348" }
+{ id: "AE453", name: "AMC Engineering", code: "2144},
+{ id: "VX557", name: "Team VisionX", code: "5228" },
+{ id: "GT159", name: "Golden Trash", code: "9348" },
 { id: "TT261", name: "Tech Trio", code: "1235" },
 { id: "DS367", name: "Decoders", code: "2146" },
 { id: "NR469", name: "Nirvana", code: "2144" },
