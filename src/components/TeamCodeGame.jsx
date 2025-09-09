@@ -2,26 +2,33 @@ import React, { useMemo, useState, useEffect } from "react";
 import "../style/TeameCodeGameStyle.css";
 
 const TEAMS = [
-  { id: "ALP01", name: "Team Alpha", code: "1234" },
-  { id: "BRV02", name: "Team Bravo", code: "7890" },
-  { id: "CHL03", name: "Team Charlie", code: "2468" },
-  { id: "DLT04", name: "Team Delta", code: "1357" },
-  { id: "ECO05", name: "Team Echo", code: "4321" },
-  { id: "FST06", name: "Team Foxtrot", code: "8765" },
-  { id: "GLF07", name: "Team Golf", code: "1122" },
-  { id: "HTR08", name: "Team Hotel", code: "2211" },
-  { id: "IND09", name: "Team India", code: "5566" },
-  { id: "JUL10", name: "Team Juliet", code: "6655" },
-  { id: "KIL11", name: "Team Kilo", code: "7788" },
-  { id: "LIM12", name: "Team Lima", code: "8877" },
-  { id: "MIC13", name: "Team Mike", code: "9900" },
-  { id: "NOV14", name: "Team November", code: "0099" },
-  { id: "OSC15", name: "Team Oscar", code: "3141" },
-  { id: "PAP16", name: "Team Papa", code: "1413" },
-  { id: "QUE17", name: "Team Quebec", code: "2718" },
-  { id: "ROM18", name: "Team Romeo", code: "1827" },
-  { id: "SIE19", name: "Team Sierra", code: "1230" },
-  { id: "TAN20", name: "Team Tango", code: "3210" },
+{ id: "SM102", name: "Smart Minds", code: "9348" },
+{ id: "KP203", name: "King Pin", code: "1235" },
+{ id: "LB305", name: "Team Lady Bug", code: "2146" 
+{ id: "CG407", name: "CONGRUENT", code: "2144" },
+{ id: "EC511", name: "EXIT CODE 2", code: "5228" },
+{ id: "CC113", name: "The Code Crew", code: "9348" 
+{ id: "TV217", name: "TrioVolt", code: "1235" },
+{ id: "DC319", name: "Team Decoder", code: "2146" }
+{ id: "RT423", name: "Risky Team", code: "2144" },
+{ id: "TS529", name: "Triple Spark", code: "5228" }
+{ id: "CD131", name: "Code DxD", code: "9348" },
+{ id: "EA233", name: "Escape Artists", code: "1235"
+{ id: "BV339", name: "Bold Visions", code: "2146" }
+{ id: "SS439", name: "Starship", code: "2144" },
+{ id: "BW541", name: "Bluewave Coders", code: "5228
+{ id: "ST143", name: "Samurai", code: "9348" },
+{ id: "DB247", name: "Debugging Squad", code: "1235
+{ id: "DT351", name: "Decode Trio", code: "2146" },
+{ id: "AE453", name: "AMC Engineering", code: "2144
+{ id: "VX557", name: "Team VisionX", code: "5228" }
+{ id: "GT159", name: "Golden Trash", code: "9348" }
+{ id: "TT261", name: "Tech Trio", code: "1235" },
+{ id: "DS367", name: "Decoders", code: "2146" },
+{ id: "NR469", name: "Nirvana", code: "2144" },
+{ id: "HT571", name: "Hustlers", code: "5228" },
+{ id: "SV173", name: "Sampreeth S V", code: "9348"},
+{ id: "CB279", name: "Cookie Bytes", code: "1235" },
 ];
 
 const MAX_ATTEMPTS = 5;
