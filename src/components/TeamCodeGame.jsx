@@ -2,7 +2,6 @@ import React, { useMemo, useState, useEffect } from "react";
 import "../style/TeameCodeGameStyle.css";
 
 const TEAMS = [
-const TEAMS = [
   { id: "SM102", name: "SMART MINDS", code: "9349" },
   { id: "CW203", name: "CODE WARRIORS", code: "1235" },
   { id: "LB305", name: "TEAM LADY BUG", code: "2146"}, 
@@ -50,7 +49,6 @@ const TEAMS = [
   { id: "SK149", name: "SONAM KUMAR", code: "4510" },
 ];
 
-];
 
 const MAX_ATTEMPTS = 5;
 const STORAGE_KEY = "teamCodeGameAttempts";
