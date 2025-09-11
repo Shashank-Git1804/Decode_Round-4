@@ -4,7 +4,7 @@ import "../style/TeameCodeGameStyle.css";
 const TEAMS = [
 const TEAMS = [
   { id: "SM102", name: "SMART MINDS", code: "9349" },
-  { id: "CW203", name: "CODE WAHRRIORS", code: "1235" },
+  { id: "CW203", name: "CODE WARRIORS", code: "1235" },
   { id: "LB305", name: "TEAM LADY BUG", code: "2146"}, 
   { id: "CG407", name: "CONGRUENT", code: "8141" },
   { id: "EC511", name: "EXIT CODE 2", code: "5228" },
