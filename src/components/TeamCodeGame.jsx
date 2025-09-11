@@ -3,7 +3,7 @@ import "../style/TeameCodeGameStyle.css";
 
 const TEAMS = [
 { id: "SM102", name: "Smart Minds", code: "9349" },
-{ id: "KP203", name: "King Pin", code: "1235" },
+{ id: "CW203", name: "Code Wahrriors", code: "1235" },
 { id: "LB305", name: "Team Lady Bug", code: "2146"}, 
 { id: "CG407", name: "CONGRUENT", code: "8141" },
 { id: "EC511", name: "EXIT CODE 2", code: "5228" },
@@ -27,8 +27,27 @@ const TEAMS = [
 { id: "DS367", name: "Decoders", code: "2146" },
 { id: "NR469", name: "Nirvana", code: "8141" },
 { id: "HT571", name: "Hustlers", code: "5228" },
-{ id: "SV173", name: "Sampreeth S V", code: "9349 "},
+{ id: "SV173", name: "Sampreeth S V", code: "9349"},
 { id: "CB279", name: "Cookie Bytes", code: "1235" },
+{ id: "OC383", name: "One Code", code: "2146"},
+{ id: "CB489", name: "Quantum Minds", code: "8141" },
+{ id: "ST102", name: "Sumitra", code: "4510" },
+{ id: "AN203", name: "Anamika Nandan", code: "8730" },
+{ id: "RR305", name: "Ragunath Reddy", code: "9408" },
+{ id: "TT107", name: "Taila Tuba", code: "4510" },
+{ id: "AR211", name: "Amutha R", code: "8730" },
+{ id: "VK313", name: "Veena K", code: "9408" },
+{ id: "SG117", name: "Snigdha", code: "4510" },
+{ id: "MT219", name: "Mithuna H N", code: "8730" },
+{ id: "KR323", name: "N. Kavita Reddy", code: "9408" },
+{ id: "AM129", name: "Ananda M R", code: "4510" },
+{ id: "JR231", name: "Jayarekha M C", code: "8730" },
+{ id: "FF307", name: "Farheen Fathima", code: "9408" },
+{ id: "CD141", name: "Chandana M C", code: "4510" },
+{ id: "DY243", name: "Divyashree", code: "8730" },
+{ id: "PY347", name: "Priyanka K", code: "9408" },
+{ id: "SK149", name: "Sonam Kumar", code: "4510" },
+
 ];
 
 const MAX_ATTEMPTS = 5;
