@@ -47,6 +47,12 @@ const TEAMS = [
   { id: "DY243", name: "DIVYASHREE", code: "8730" },
   { id: "PY347", name: "PRIYANKA K", code: "9408" },
   { id: "SK149", name: "SONAM KUMAR", code: "4510" },
+  { id: "EX102", name: "TEACHER-1", code: "4510" }, 
+  { id: "EX203", name: "TEACHER-2", code: "8730" }, 
+  { id: "EX305", name: "TEACHER-3", code: "9408" },
+  { id: "EX107", name: "TEACHER-4", code: "4510" }, 
+  { id: "EX211", name: "TEACHER-5", code: "8730" }, 
+  { id: "EX313", name: "TEACHER-6", code: "9408" },
 ];
 
 
